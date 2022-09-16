@@ -5,7 +5,7 @@ import pickle
 import pandas as pd
 import numpy as  np
 app=FastAPI()
-pickle_in=open("C:/Users/DELL/Downloads/model.pkl","rb")
+pickle_in=open("model.pkl","rb")
 classifier=pickle.load(pickle_in)
 @app.get('/{name}')
 def index():
